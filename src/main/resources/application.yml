@@ -1,0 +1,8 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    url: jdbc:mysql://8.140.253.122:3306/wangdagua?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 1qaz@4321
+    driver-class-name: com.mysql.cj.jdbc.Driver
