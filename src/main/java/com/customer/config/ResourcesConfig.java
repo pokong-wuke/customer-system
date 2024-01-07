@@ -1,5 +1,7 @@
 package com.customer.config;
 
+import com.customer.constant.Constants;
+import com.customer.interceptor.RepeatSubmitInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -29,7 +31,7 @@ public class ResourcesConfig implements WebMvcConfigurer
     {
         /** 本地文件上传路径 */
         registry.addResourceHandler(Constants.RESOURCE_PREFIX + "/**")
-                .addResourceLocations("file:" + RuoYiConfig.getProfile() + "/");
+                .addResourceLocations("file:" + "D:/ruoyi/uploadPath" + "/");
 
         /** swagger配置 */
         registry.addResourceHandler("/swagger-ui/**")
